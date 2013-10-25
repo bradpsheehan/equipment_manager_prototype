@@ -1,0 +1,75 @@
+* {padding:0;margin: 0;}
+
+body {
+  background-color: whitesmoke;
+}
+.container {
+  position:absolute;
+  width:300px;
+  top:40%;
+  left:50%;
+  margin:-150px 0 0 -150px;
+  /*border: 1px red solid;*/
+  border-radius: 6px;
+}
+#person {
+  position: relative;
+  background-image: url('../images/stick_person.png');
+  background-repeat: no-repeat;
+  /*border: 1px blue solid;*/
+  height: 350px;
+}
+#person li {
+  list-style-type: none;
+  position: absolute;
+  background: black;
+  height: 15px;
+  width: 15px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+#right-hand {
+  top: 76px;
+  left: 26px;
+}
+#left-hand {
+  top: 76px;
+  left: 220px;
+}
+#head {
+  top: 30px;
+  left: 123px;
+}
+#right-foot {
+  top: 284px;
+  left: 79px;
+}
+#left-foot {
+  top: 284px;
+  left: 166px;
+}
+#person a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  margin: -15px 0 0 -15px;
+}
+.pulse {
+  /*border: 5px solid #95b23c;*/
+  border: 5px solid black;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  -webkit-animation: pulsate 2s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  opacity: 0.0
+  position: absolute;
+  border-radius: 30px;
+}
+@-webkit-keyframes pulsate {
+  0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
+  50% {opacity: 1.0;}
+  100% {-webkit-transform: scale(1.2, 1.2); opacity: 0.0;}
+}
+
+
