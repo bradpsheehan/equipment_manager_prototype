@@ -93,14 +93,25 @@ body {
   100% {-webkit-transform: scale(1.2, 1.2); opacity: 0.0;}
 }
 .body-section {
-  height: 20px;
-  width: 80%;
+  width: 100%;
   border: 1px solid lightblue;
   margin-top: 5%;
   margin-left: auto;
+  margin-right: auto;
   display: block;
   height: 55px;
   border-radius: 6px;
+  line-height: 55px;
+  font-size: 2em;
+  font-family: sans-serif;
+  color: grey;
 }
+.equipment img {
+  float: left;
+  height: 55px;
+  margin-right: 10%;
+  border: 1px solid lightblue;
+}
+
 
 
