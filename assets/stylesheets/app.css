@@ -40,7 +40,6 @@ body {
   display: block;
   margin-top: 10%;
 }
-
 .body-section {
   width: 100%;
   border: 1px solid gray;
@@ -55,14 +54,6 @@ body {
   font-family: sans-serif;
   color: grey;
 }
-.equipment img {
-  float: left;
-  height: 55px;
-  margin-right: 10%;
-  border-right: 1px solid black;
-  border-top-left-radius: 6px;
-  border-bottom-left-radius: 6px;
-}
 #profile-image {
   float: left;
   width: 160px;
@@ -70,6 +61,26 @@ body {
 }
 #profile-img-btn {
   margin-top: 5%;
+}
+.equipment.thumbnail img {
+  float: left;
+  height: 55px;
+  margin-right: 10%;
+  border-right: 1px solid black;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.equipment li {
+  position: relative;
+}
+.img-lrg {
+  height: 300px;
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  background: lightgray;
+  opacity: .96;
 }
 
 
