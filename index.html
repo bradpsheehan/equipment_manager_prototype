@@ -21,21 +21,58 @@
     <div class="equipment">
       <ul>
         <li class="body-section">
-          <div class="img-lrg"></div>
-          <a href="http://placehold.it/200x200" target="blank"><img src="http://placehold.it/55x55" class="thumbnail"></a>
+          <div class="img-lrg">
+            <span class="close">X</span>
+          </div>
+          <a class="thumbnail" href="http://placehold.it/200x200" target="blank"><img src="http://placehold.it/55x55"></a>
           harness
         </li>
+
         <li class="body-section">
-          <a href="http://placehold.it/200x200" target="blank"><img src="http://placehold.it/55x55" class="thumbnail"></a>
+          <div class="img-lrg">
+            <span class="close">X</span>
+          </div>
+          <a class="thumbnail" href="http://placehold.it/200x200" target="blank"><img src="http://placehold.it/55x55"></a>
           gloves
         </li>
+
         <li class="body-section">
-          <a href="http://placehold.it/200x200" target="blank"><img src="http://placehold.it/55x55" class="thumbnail"></a>
-          steel toes
+          <div class="img-lrg">
+            <span class="close">X</span>
+          </div>
+          <a class="thumbnail" href="http://placehold.it/200x200" target="blank"><img src="http://placehold.it/55x55"></a>
+          steele toes
         </li>
+
+        
       </ul>
     </div>
   </div>
+
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+
+  <script type="text/javascript">
+    $('.img-lrg').hide();
+
+    $('.body-section').each(function() {
+      // TODO: close all other lrg-img's
+
+      var thumbnail = $(this).find('.thumbnail');
+
+      thumbnail.on("click", function(event) {
+        event.preventDefault();
+        var largeImage = $(this).siblings('.img-lrg');
+        // console.log(largeImage);
+        largeImage.show();
+      });
+      $('.img-lrg').on("click", ".close", function(event) {
+        var largeImage = $(this).parent();
+        largeImage.hide();
+      });
+    });
+
+  </script>
+
 
 </body>
 </html>

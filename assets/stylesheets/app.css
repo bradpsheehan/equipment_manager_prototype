@@ -82,6 +82,13 @@ body {
   background: lightgray;
   opacity: .96;
 }
-
-
-
+.close {
+  position: absolute;
+  top: 0.4em;
+  right: 0.4em;
+  width: 2em;
+  height: 2em;
+  text-indent: 30px;
+  cursor: pointer;
+  z-index: 5;
+}
