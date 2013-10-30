@@ -6,70 +6,70 @@ body {
 .container {
   position:absolute;
   width:300px;
-  top:40%;
+  top:30%;
   left:50%;
   margin:-150px 0 0 -150px;
-  /*border: 1px red solid;*/
   border-radius: 6px;
+  /*border: 1px red solid;*/
+}
+#job-search {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  height: 30px;
+  border-radius: 6px;
+  border-style: none;
+  border: 1px solid gray;
 }
 #person {
   position: relative;
-  background-image: url('../images/stick_person.png');
   background-repeat: no-repeat;
   /*border: 1px blue solid;*/
   height: 350px;
-}
-#person li {
-  list-style-type: none;
-  position: absolute;
-  background: black;
-  height: 10px;
-  width: 10px;
-  border-radius: 10px;
-  cursor: pointer;
-}
-#right-hand {
-  top: 76px;
-  left: 26px;
-}
-#left-hand {
-  top: 76px;
-  left: 220px;
-}
-#head {
-  top: 30px;
-  left: 123px;
-}
-#right-foot {
-  top: 284px;
-  left: 79px;
-}
-#left-foot {
-  top: 284px;
-  left: 166px;
-}
-#person a {
-  color: black;
-  text-decoration: none;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
   display: block;
-  margin: -15px 0 0 -15px;
+  border: 1px solid gray;
+  border-radius: 6px;
 }
-.pulse {
-  /*border: 5px solid #95b23c;*/
-  border: 5px solid black;
-  width: 30px;
-  height: 30px;
-  overflow: hidden;
-  -webkit-animation: pulsate 2s ease-out;
-  -webkit-animation-iteration-count: infinite;
-  opacity: 0.0
-  position: absolute;
-  border-radius: 30px;
+#person img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 10%;
 }
-@-webkit-keyframes pulsate {
-  0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
-  50% {opacity: 1.0;}
-  100% {-webkit-transform: scale(1.2, 1.2); opacity: 0.0;}
+.body-section {
+  width: 100%;
+  border: 1px solid gray;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  height: 55px;
+  border-radius: 6px;
+  line-height: 55px;
+  font-size: 2em;
+  font-family: sans-serif;
+  color: grey;
 }
+.equipment img {
+  float: left;
+  height: 55px;
+  margin-right: 10%;
+  border-right: 1px solid black;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+#profile-image {
+  float: left;
+  width: 160px;
+  margin-top: 5%;
+}
+#profile-img-btn {
+  margin-top: 5%;
+}
+
 
 
