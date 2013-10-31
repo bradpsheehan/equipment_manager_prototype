@@ -60,9 +60,10 @@
       var thumbnails = $(document).find('.img-lrg');
 
       thumbnail.on("click", function(event) {
-        thumbnails.hide();
         event.preventDefault();
+        thumbnails.hide();
         var largeImage = $(this).siblings('.img-lrg');
+        largeImage.addClass('open');
         // console.log(largeImage);
         largeImage.show();
       });
@@ -72,14 +73,13 @@
         largeImage.hide();
       });
 
-      window.onkeyup = function (event) {
-       if (event.keyCode == 27) {
-        thumbnail.hide();
-       }
-      };
-
     });
 
+    document.onkeyup = function (event) {
+     if (event.keyCode == 27) {
+      $('.open').hide();
+     }
+    };
   </script>
 
 
