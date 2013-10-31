@@ -6,7 +6,7 @@ body {
 .container {
   position:absolute;
   width:300px;
-  top:30%;
+  top:25%;
   left:50%;
   margin:-150px 0 0 -150px;
   border-radius: 6px;
@@ -91,4 +91,15 @@ body {
   text-indent: 30px;
   cursor: pointer;
   z-index: 5;
+}
+#welcome-header {
+  font-family: sans-serif;
+  color: gray;
+  margin-bottom: 5%;
+}
+.equipment-name {
+  line-height: 55px;
+  margin-left: 30%;
+  position: absolute;
+  top: 0;
 }
