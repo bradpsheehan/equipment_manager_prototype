@@ -55,11 +55,12 @@
     $('.img-lrg').hide();
 
     $('.body-section').each(function() {
-      // TODO: close all other lrg-img's
+      // TODO: close all other lrg-img's before opening the nex
 
       var thumbnail = $(this).find('.thumbnail');
 
       thumbnail.on("click", function(event) {
+        $(document).find('.img-lrg').hide();
         event.preventDefault();
         var largeImage = $(this).siblings('.img-lrg');
         // console.log(largeImage);
