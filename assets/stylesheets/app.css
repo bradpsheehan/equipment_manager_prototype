@@ -81,6 +81,8 @@ body {
   bottom: 0;
   background: lightgray;
   opacity: .96;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
 }
 .close {
   position: absolute;
