@@ -17,18 +17,17 @@
 						"image" : "url"
 					},
 				},
-
 				"chest" : {
 						"name"  : "name",
 						"image" : "url",
 					},
 				"hands" : {
-						"image" : "url",
-						"name"  : "name"
+						"name"  : "name",
+						"image" : "url"
 					},
 				"feet"  : {
-						"image" : "url",
-						"name"  : "name"
+						"name"  : "name",
+						"image" : "url"
 					},
 				},
 		},
