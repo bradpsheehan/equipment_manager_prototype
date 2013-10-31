@@ -33,8 +33,9 @@ body {
   display: block;
   border: 1px solid gray;
   border-radius: 6px;
+  background-color: whitesmoke;
 }
-#person img {
+#face {
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -80,7 +81,7 @@ body {
 .img-lrg {
   height: 300px;
   width: 100%;
-  z-index: 1;
+  z-index: 5;
   position: absolute;
   bottom: 0;
   background: white;
@@ -108,4 +109,18 @@ body {
   margin-left: 30%;
   position: absolute;
   top: 0;
+}
+#glasses {
+  z-index: 1;
+  position: absolute;
+  opacity: .80;
+  top: 41%;
+  left: 25%;
+}
+#hat {
+  z-index: 2;
+  position: absolute;
+  opacity: .45;
+  top: 2%;
+  left: 16%;
 }
