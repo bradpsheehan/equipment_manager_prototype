@@ -1,8 +1,37 @@
 {
-	jobs: [
+	"jobs": [
 		{
 			"title" : "milling",
-			"head"  : ""
+			"head"  : {
+				"hat"  : "url",
+				"eyes" : "url",
+				"ears" : "url"
+			},
+			"chest" : "url",
+			"hands" : "url",
+			"feet"  : "url"
+		},
+		{
+			"title" : "welding",
+			"head"  : {
+				"hat"  : "url",
+				"eyes" : "url",
+				"ears" : "url"
+			},
+			"chest" : "url",
+			"hands" : "url",
+			"feet"  : "url"
+		}
+		{
+			"title" : "lathe",
+			"head"  : {
+				"hat"  : "url",
+				"eyes" : "url",
+				"ears" : "url"
+			},
+			"chest" : "url",
+			"hands" : "url",
+			"feet"  : "url"
 		}
 	]
 }
