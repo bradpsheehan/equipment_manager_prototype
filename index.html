@@ -57,18 +57,27 @@
     $('.body-section').each(function() {
 
       var thumbnail = $(this).find('.thumbnail');
+      var thumbnails = $(document).find('.img-lrg');
 
       thumbnail.on("click", function(event) {
-        $(document).find('.img-lrg').hide();
+        thumbnails.hide();
         event.preventDefault();
         var largeImage = $(this).siblings('.img-lrg');
         // console.log(largeImage);
         largeImage.show();
       });
+
       $('.img-lrg').on("click", ".close", function(event) {
         var largeImage = $(this).parent();
         largeImage.hide();
       });
+
+      window.onkeyup = function (event) {
+       if (event.keyCode == 27) {
+        thumbnail.hide();
+       }
+      };
+
     });
 
   </script>
