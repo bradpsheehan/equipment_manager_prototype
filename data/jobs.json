@@ -2,36 +2,35 @@
 	"jobs": [
 		{
 			"title" : "milling",
-			"head"  : {
-				"hat"  : "url",
-				"eyes" : "url",
-				"ears" : "url"
-			},
-			"chest" : "url",
-			"hands" : "url",
-			"feet"  : "url"
+			"ppe"   : {
+				"head"  : {
+					"hat"  : {
+						"name"  : "name",
+						"image" : "url"
+					},
+					"eyes" : {
+						"name"  : "name",
+						"image" : "url"
+					},
+					"ears" : {
+						"name"  : "name",
+						"image" : "url"
+					},
+				},
+
+				"chest" : {
+						"name"  : "name",
+						"image" : "url",
+					},
+				"hands" : {
+						"image" : "url",
+						"name"  : "name"
+					},
+				"feet"  : {
+						"image" : "url",
+						"name"  : "name"
+					},
+				},
 		},
-		{
-			"title" : "welding",
-			"head"  : {
-				"hat"  : "url",
-				"eyes" : "url",
-				"ears" : "url"
-			},
-			"chest" : "url",
-			"hands" : "url",
-			"feet"  : "url"
-		}
-		{
-			"title" : "lathe",
-			"head"  : {
-				"hat"  : "url",
-				"eyes" : "url",
-				"ears" : "url"
-			},
-			"chest" : "url",
-			"hands" : "url",
-			"feet"  : "url"
-		}
 	]
 }
