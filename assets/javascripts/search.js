@@ -48,7 +48,7 @@ $.fn.jobSearcher = function(options) {
 
                     $.getJSON(options.path, function(data){
 
-                        var jobs = data,
+                        var jobs = data.jobs,
                             jobs_count = jobs.length;
 
                         $(options.outputId).empty();
@@ -66,6 +66,19 @@ $.fn.jobSearcher = function(options) {
                     }); // end ajax call
                 }
             }; // end jobBook obj
+
+            // var changeEquipment = function(event) {
+
+            //     event.preventDefault();
+
+                
+
+            //     $.getJSON(options.path, function(data){
+
+            //     });
+            // }
+
+            $(".job-title").on("click", changeEquipment(event));
 
             $("#job-search").keyup(jobBook.search).focus(function () {
 
