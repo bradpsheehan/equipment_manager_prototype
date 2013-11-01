@@ -1,35 +1,102 @@
 {
-	"jobs": [
-		{
-			"title" : "milling",
-			"ppe"   : {
-				"head"  : {
-					"hat"  : {
-						"name"  : "name",
-						"image" : "url"
-					},
-					"eyes" : {
-						"name"  : "name",
-						"image" : "url"
-					},
-					"ears" : {
-						"name"  : "name",
-						"image" : "url"
-					},
-				},
-				"chest" : {
-						"name"  : "name",
-						"image" : "url",
-					},
-				"hands" : {
-						"name"  : "name",
-						"image" : "url"
-					},
-				"feet"  : {
-						"name"  : "name",
-						"image" : "url"
-					},
-				},
+"jobs": [
+	{
+		"title" : "milling",
+		"head"  : {
+			"hat"  : {
+				"name"  : "hard hat",
+				"specs" : "series 67Z",
+				"image" : "hard_hat.png"
+			},
+			"eyes" : {
+				"name"  : "name",
+				"specs" : "model 89AB",
+				"image" : "glasses.png"
+			},
+			"ears" : {
+				"name"  : "",
+				"specs" : "",
+				"image" : ""
+			},
+			"mouth" : {
+				"name"  : "",
+				"specs" : "",
+				"image" : ""
+			}
 		},
-	]
+		"chest" : {
+			"name"  : "harness",
+			"specs" : "model T123",
+			"image" : {
+				"thumb" : "chest-harness-thumb.png",
+				"lrg"   : "chest-harness-lrg.png"
+			}
+		},
+		"hands" : {
+			"name"  : "name",
+			"specs" :  "S series",
+			"image" : {
+				"thumb" : "welding-gloves-thumb.jpg",
+				"lrg"   : "welding-gloves-lrg.jpg"
+			}
+		},
+		"feet"  : {
+			"name"  : "name",
+			"specs" : "567B",
+			"image" : {
+				"thumb" : "steel-toe-thumb.jpg",
+				"lrg"   : "steel-toe-lrg.jpg"
+			}
+		}
+	},
+	{
+		"title" : "welding",
+		"head"  : {
+			"hat"  : {
+				"name"  : "hard hat",
+				"specs" : "series 67Z",
+				"image" : "hard_hat.png"
+			},
+			"eyes" : {
+				"name"  : "name",
+				"specs" : "model 89AB",
+				"image" : "glasses.png"
+			},
+			"ears" : {
+				"name"  : "",
+				"specs" : "",
+				"image" : ""
+			},
+			"mouth" : {
+				"name"  : "",
+				"specs" : "",
+				"image" : ""
+			}
+		},
+		"chest" : {
+			"name"  : "harness",
+			"specs" : "model T123",
+			"image" : {
+				"thumb" : "chest-harness-thumb.png",
+				"lrg"   : "chest-harness-lrg.png"
+			}
+		},
+		"hands" : {
+			"name"  : "name",
+			"specs" :  "S series",
+			"image" : {
+				"thumb" : "welding-gloves-thumb.jpg",
+				"lrg"   : "welding-gloves-lrg.jpg"
+			}
+		},
+		"feet"  : {
+			"name"  : "name",
+			"specs" : "567B",
+			"image" : {
+				"thumb" : "steel-toe-thumb.jpg",
+				"lrg"   : "steel-toe-lrg.jpg"
+			}
+		}
+	}
+]
 }
