@@ -17,8 +17,8 @@
     <div id="output" aria-automatic="true" aria-live="polite" aria-relevant="additions removals"></div>
 
     <div id="person">
-      <img id="hat" src="./assets/images/hard_hat.png">
-      <img id="glasses" src="./assets/images/glasses.png">
+      <img id="hat" src="">
+      <img id="eyes" src="">
       <img id="face" src="./assets/images/face_1.svg">
       <form method="GET">
           <input id="profile-image" type="file" accept="image/*" capture="camera">
@@ -28,31 +28,37 @@
 
     <div class="equipment">
       <ul>
-        <li class="body-section">
+        <li class="body-section" id="chest">
           <div class="img-lrg">
-            <img src="./assets/images/chest-harness-lrg.png">
+            <img id="chest-img-lrg" src="">
             <span class="close">X</span>
           </div>
-          <a class="thumbnail" href="./assets/images/chest-harness-thumb.png" target="blank"><img src="./assets/images/chest-harness-thumb.png"></a>
-          <div class="equipment-name">harness</div>
+          <a class="thumbnail" href="./assets/images/chest-harness-thumb.png" target="blank">
+            <img id="chest-img-thumb" src="">
+          </a>
+          <div id="chest-equipment-name" class="equipment-name"></div>
         </li>
 
-        <li class="body-section">
+        <li class="body-section" id="hands">
           <div class="img-lrg">
-            <img src="./assets/images/welding-gloves-lrg.jpg">
+            <img id="hands-img-lrg" src="">
             <span class="close">X</span>
           </div>
-          <a class="thumbnail" href="./assets/images/welding-gloves-thumb.jpg" target="blank"><img src="./assets/images/welding-gloves-thumb.jpg"></a>
-          <div class="equipment-name">gloves</div>
+          <a class="thumbnail" href="./assets/images/welding-gloves-thumb.jpg" target="blank">
+            <img id="hands-img-thumb" src="">
+          </a>
+          <div id="hands-equipment-name" class="equipment-name"></div>
         </li>
 
-        <li class="body-section">
+        <li class="body-section" id="feet">
           <div class="img-lrg">
-            <img src="./assets/images/steel-toe-lrg.jpg">
+            <img id="feet-img-lrg" src="">
             <span class="close">X</span>
           </div>
-          <a class="thumbnail" href="./assets/images/steel-toe-thumb.jpg" target="blank"><img src="./assets/images/steel-toe-thumb.jpg"></a>
-          <div class="equipment-name">steel toes</div>
+          <a class="thumbnail" href="./assets/images/steel-toe-thumb.jpg" target="blank">
+            <img id="feet-img-thumb" src="">
+          </a>
+          <div id="feet-equipment-name" class="equipment-name"></div>
         </li>
 
         

@@ -31,7 +31,7 @@ $.fn.jobSearcher = function(options) {
 
                                 if( findByTitle !== -1) {
 
-                                    $(options.outputId).append('<p>' + job.title + '<p>').hide().fadeIn();
+                                    $(options.outputId).append('<p class="job-title" id="' + job.title + '">' + job.title + '<p>').hide().fadeIn();
 
                                 } //end if
 
@@ -57,7 +57,7 @@ $.fn.jobSearcher = function(options) {
 
                             $.each(jobs, function(i, job) {
 
-                                $(options.outputId).append('<p>' + job.title + '<p>').hide().fadeIn();
+                                $(options.outputId).append('<p class="job-title" id="' + job.title + '">' + job.title + '<p>').hide().fadeIn();
 
                             }); // end each
 
@@ -67,18 +67,48 @@ $.fn.jobSearcher = function(options) {
                 }
             }; // end jobBook obj
 
-            // var changeEquipment = function(event) {
+            var changeEquipment = function(milling) {
 
-            //     event.preventDefault();
+                $.getJSON(options.path, function(data){
 
+                    var millingJob = data.jobs[0];
+
+                    console.log(millingJob);
+
+                    // set ppe attributes on page
+
+                    //head
+                    $('#hat').attr('src', './assets/images/' + millingJob.head.hat.image).hide().fadeIn();;
+                    $('#eyes').attr('src', './assets/images/' + millingJob.head.eyes.image).hide().fadeIn();;
+
+                    //chest
+                    $('#chest-img-thumb').attr('src', './assets/images/' + millingJob.chest.image.thumb).hide().fadeIn();;
+                    $('#chest-img-lrg').attr('src', './assets/images/' + millingJob.chest.image.lrg);
+                    $('#chest-equipment-name').text( millingJob.chest.name ).hide().fadeIn();
+
+                    //hands
+                    $('#hands-img-thumb').attr('src', './assets/images/' + millingJob.hands.image.thumb).hide().fadeIn();;
+                    $('#hands-img-lrg').attr('src', './assets/images/' + millingJob.hands.image.lrg);
+                    $('#hands-equipment-name').text( millingJob.hands.name ).hide().fadeIn();;
+
+                    //feet
+                    $('#feet-img-thumb').attr('src', './assets/images/' + millingJob.feet.image.thumb).hide().fadeIn();;
+                    $('#feet-img-lrg').attr('src', './assets/images/' + millingJob.feet.image.lrg);
+                    $('#feet-equipment-name').text( millingJob.feet.name ).hide().fadeIn();;
+
+                });
+            }
+
+            $("body").on("click", '#milling', function(event){
                 
+                event.preventDefault();
 
-            //     $.getJSON(options.path, function(data){
+                var milling = $('#milling').text();
 
-            //     });
-            // }
+                // console.log(milling);
 
-            $(".job-title").on("click", changeEquipment(event));
+                changeEquipment(milling);
+            });
 
             $("#job-search").keyup(jobBook.search).focus(function () {
 

@@ -110,7 +110,7 @@ body {
   position: absolute;
   top: 0;
 }
-#glasses {
+#eyes {
   z-index: 1;
   position: absolute;
   opacity: .80;
@@ -129,4 +129,7 @@ body {
   font-family: sans-serif;
   font-size: 1.3em;
   color: grey;
+}
+.job-title {
+  cursor: pointer;
 }
