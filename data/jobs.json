@@ -36,12 +36,12 @@
 			"name"  : "name",
 			"specs" :  "S series",
 			"image" : {
-				"thumb" : "welding-gloves-thumb.jpg",
-				"lrg"   : "welding-gloves-lrg.jpg"
+				"thumb" : "work_gloves_thumb.jpg",
+				"lrg"   : "work_gloves_lrg.jpg"
 			}
 		},
 		"feet"  : {
-			"name"  : "name",
+			"name"  : "steel toes",
 			"specs" : "567B",
 			"image" : {
 				"thumb" : "steel-toe-thumb.jpg",
@@ -53,14 +53,14 @@
 		"title" : "welding",
 		"head"  : {
 			"hat"  : {
-				"name"  : "hard hat",
+				"name"  : "weld mask",
 				"specs" : "series 67Z",
-				"image" : "hard_hat.png"
+				"image" : "welding_mask_lrg.png"
 			},
 			"eyes" : {
-				"name"  : "name",
-				"specs" : "model 89AB",
-				"image" : "glasses.png"
+				"name"  : "",
+				"specs" : "",
+				"image" : ""
 			},
 			"ears" : {
 				"name"  : "",
@@ -74,23 +74,23 @@
 			}
 		},
 		"chest" : {
-			"name"  : "harness",
-			"specs" : "model T123",
+			"name"  : "weld appron",
+			"specs" : "model 45678",
 			"image" : {
-				"thumb" : "chest-harness-thumb.png",
-				"lrg"   : "chest-harness-lrg.png"
+				"thumb" : "welding_appron_thumb.jpg",
+				"lrg"   : "welding_appron_lrg.jpg"
 			}
 		},
 		"hands" : {
-			"name"  : "name",
-			"specs" :  "S series",
+			"name"  : "weld gloves",
+			"specs" :  "W series",
 			"image" : {
 				"thumb" : "welding-gloves-thumb.jpg",
 				"lrg"   : "welding-gloves-lrg.jpg"
 			}
 		},
 		"feet"  : {
-			"name"  : "name",
+			"name"  : "steel toes",
 			"specs" : "567B",
 			"image" : {
 				"thumb" : "steel-toe-thumb.jpg",

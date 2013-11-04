@@ -99,6 +99,38 @@ $.fn.jobSearcher = function(options) {
                 });
             }
 
+            var changeEquipmentAgain = function(welding) {
+
+                $.getJSON(options.path, function(data){
+
+                    var weldingJob = data.jobs[1];
+
+                    console.log(weldingJob);
+
+                    // set ppe attributes on page
+
+                    //head
+                    $('#hat').attr('src', './assets/images/' + weldingJob.head.hat.image).hide().fadeIn();;
+                    $('#eyes').attr('src', './assets/images/' + weldingJob.head.eyes.image).hide().fadeIn();;
+
+                    //chest
+                    $('#chest-img-thumb').attr('src', './assets/images/' + weldingJob.chest.image.thumb).hide().fadeIn();;
+                    $('#chest-img-lrg').attr('src', './assets/images/' + weldingJob.chest.image.lrg);
+                    $('#chest-equipment-name').text( weldingJob.chest.name ).hide().fadeIn();
+
+                    //hands
+                    $('#hands-img-thumb').attr('src', './assets/images/' + weldingJob.hands.image.thumb).hide().fadeIn();;
+                    $('#hands-img-lrg').attr('src', './assets/images/' + weldingJob.hands.image.lrg);
+                    $('#hands-equipment-name').text( weldingJob.hands.name ).hide().fadeIn();;
+
+                    //feet
+                    $('#feet-img-thumb').attr('src', './assets/images/' + weldingJob.feet.image.thumb).hide().fadeIn();;
+                    $('#feet-img-lrg').attr('src', './assets/images/' + weldingJob.feet.image.lrg);
+                    $('#feet-equipment-name').text( weldingJob.feet.name ).hide().fadeIn();;
+
+                });
+            }
+
             $("body").on("click", '#milling', function(event){
                 
                 event.preventDefault();
@@ -108,6 +140,17 @@ $.fn.jobSearcher = function(options) {
                 // console.log(milling);
 
                 changeEquipment(milling);
+            });
+
+            $("body").on("click", '#welding', function(event){
+                
+                event.preventDefault();
+
+                var milling = $('#welding').text();
+
+                // console.log(milling);
+
+                changeEquipmentAgain(milling);
             });
 
             $("#job-search").keyup(jobBook.search).focus(function () {
