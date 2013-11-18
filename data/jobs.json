@@ -33,7 +33,7 @@
 			}
 		},
 		"hands" : {
-			"name"  : "name",
+			"name"  : "gloves",
 			"specs" :  "S series",
 			"image" : {
 				"thumb" : "work_gloves_thumb.jpg",
